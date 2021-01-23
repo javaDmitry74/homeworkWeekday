@@ -18,7 +18,7 @@ public class homework2GuessTheNumber {
         Random r = new Random();
         int a = r.nextInt(100) + 1;
         while(x != a){
-            System.out.println("The number is " + a + "that was  "+ count +" time we try");
+            System.out.println("The number is " + a + " that was  "+ count +" time we try");
              a = r.nextInt(100)+ 1;
              count++;
         }
