@@ -23,7 +23,7 @@ public class homework2GuessTheNumber {
              count++;
         }
 
-        System.out.println("Total times we try to guess was :" +count++);
+        System.out.println("Total times we try to guess was :" +count);
         System.out.println( "We finally guessed it!! it is : " + x);
 
 
