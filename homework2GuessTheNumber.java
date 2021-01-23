@@ -7,7 +7,7 @@ public class homework2GuessTheNumber {
 
         final int MIN = 1;
         final int MAX = 100;
-        int count = 0;
+        int count = 1;
 
 //               int ranNumber = 0;
         System.out.println("Please enter number between " + MIN + " and " + MAX);
@@ -16,13 +16,14 @@ public class homework2GuessTheNumber {
         System.out.println("And computer will try to guess it");
 
         Random r = new Random();
-        int b = 1;
         int a = r.nextInt(100) + 1;
         while(x != a){
-            System.out.println("The number is " + a + " we guessed "+ b + " times!");
+            System.out.println("The number is " + a + "that was  "+ count +" time we try");
              a = r.nextInt(100)+ 1;
-             b++;
+             count++;
         }
+
+        System.out.println("Total times we try to guess was :" +count++);
         System.out.println( "We finally guessed it!! it is : " + x);
 
 
