@@ -10,7 +10,7 @@ public class homeworkRange {
         Scanner num = new Scanner(System.in);
         int e;
         e = num.nextInt();
-        if (e == a || e < b) {
+        if (e >= a && e < b) {
             System.out.println("According to our calculation , number you entered fit to our Left range of values ");
             System.out.println("You entered number  " + e);
         } else {
@@ -18,12 +18,14 @@ public class homeworkRange {
                 System.out.println("According to our calculation , number you entered fit to our Middle/Center range of values");
                 System.out.println("You entered number  " + e);
             } else {
-                if (e > b || e == 100) {
+                if (e <= c && e > b) {
                     System.out.println("According to our calculation , number you entered fit to our Right range of values");
                 }
+
                     System.out.println("You entered number  " + e);
                 }
             }
         }
     }
+
 
